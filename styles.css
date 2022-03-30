@@ -1,0 +1,9 @@
+footer a {
+    border-radius: 50%;
+}
+
+footer a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%; 
+    transition: .5s;
+}
