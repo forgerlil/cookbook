@@ -6,120 +6,144 @@
     <link href='styles.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-  <body>
+  <body class="background">
+    <img class="bg-image">
     <header>
 
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allura&family=Nunito:wght@200;400;700&family=Oleo+Script&family=Pinyon+Script&family=Yeseva+One&display=swap');
+        </style>
+
     <!-- Navigation Nina -->
-    
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(245, 243, 243)">
+        <a class="navbar-brand" href="#"><img width="50px" height="50px" src="data:image/jpeg;base64,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" alt="Logo"> 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSuppor tedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#"> About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#"> Wine <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Recipes
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="bowl.html">Cauliflower Rice Burrito</a>
+                <a class="dropdown-item" href="zestyasparagus.html">Zesty Asparagus</a>
+                <a class="dropdown-item" href="lemondrizzle.html">Lemon Drizzle Cake</a>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Recipe Name" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
       </nav>
-    
     </header>
-
    <main>
                 
                 <!-- Jumbotron Anton -->
-              <div class="jumbotron text-center">
-                <h1>Group 2 Cookbook</h1>
+
+              <div class="jumbotron text-center" style="background-color: rgba(255, 255, 255, 0.7); margin-top: 20px;">
+                <h1>Oma's Cookbook</h1>
               </div>             
               <div class="container" style="margin: 0 auto">
                <div class="row" style="margin-bottom: 30px">
                 <!-- Recipe Ruslan -->
-                <div class="card col-6">
-                  <img src="./Pictures/asparagus-starter.jpg" class="card-img-top" alt="test">
+                <div class="card col-6 ">
+                  <img src="./Pictures/samarkand_plov.jpeg" class="card-img-top" alt="test" style="margin-top: 2%;">
                   <div class="card-body">
-                    <h5 class="card-title">HOW TO MAKE THIS ZESTY ASPARAGUS</h5>
-                    <table class="table table-bordered table-dark">
+                    <h5 class="card-title">How to make Uzbek plov</h5>
+                    <table class="table table-bordered table-striped">
                       <thead>
                         <tr>
-                          <th scope="col">CHECKLIST</th>
-                          <th scope="col">WEIGHT/AMOUNT</th>
-                          <th scope="col">INGREDIENTS</th>
+                          <th scope="col">Put it already?</th>
+                          <th scope="col">Amount</th>
+                          <th scope="col">Of Smth</th>
                           </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <th scope="row">
                             <input type="checkbox" aria-label="Checkbox for following text input"></th>
-                          <td>175 g</td>
-                          <td>asparagus spears</td>
+                          <td>750 g</td>
+                          <td>beef or mutton</td>
                         </tr>
                         <tr>
                           <th scope="row">
                             <input type="checkbox" aria-label="Checkbox for following text input"></th>
-                          <td>1/2 piece</td>
-                          <td>lemon juice</td>
+                          <td>900 g</td>
+                          <td>uncooked rice</td>
                         </tr>
                         <tr>
-                            <tr>
-                                <th scope="row">
-                                  <input type="checkbox" aria-label="Checkbox for following text input"></th>
-                                <td>15 g</td>
-                                <td>parmesan shavings</td>
-                              </tr>
-                              <tr>
-                                <tr>
-                                    <th scope="row">
-                                      <input type="checkbox" aria-label="Checkbox for following text input"></th>
-                                    <td>to taste</td>
-                                    <td>black pepper</td>
-                                  </tr>
+                          <th scope="row">
+                            <input type="checkbox" aria-label="Checkbox for following text input"></th>
+                          <td>600 g</td>
+                          <td>onions</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <input type="checkbox" aria-label="Checkbox for following text input"></th>
+                          <td>750 g</td>
+                          <td>beef or mutton</td>
+                        </tr>
                       </tbody>
                     </table>
-                    <p>1.Trim the asparagus of any woody stalk. Steam the spears for 5-10 minutes or until just tender. <br><br>
-                        2. Transfer the asparagus to a large bowl and toss with the butter, lemon juice and lemon zest. <br><br>
-                        3. Pile the spears onto a large serving plate and top with the parmesan shavings. Season with freshly ground black pepper before serving.</p>
-                      <button onclick="document.location='recipe.html'">HTML Tutorial</button>
+                    <p>Heat oil in a pan.
+                      Fry sliced onions until golden.
+                      Cut meat into large cubes, add to oil and cook until meat is brown.
+                      Slice carrots longways and add to meat and onion.
+                      Add salt, pepper and spices to pan.
+                      Pour water just to cover the ingredients, heat until water bubbles, then simmer on very low heat until carrots and meat is cooked. Do not stir.
+                      Wash and drain rice and layer it on top of the carrots in the plan. Season generously with salt.
+                      Pour boiling water over pan until it just covers the rice (around 2 cm).
+                      Increase the heat until boiling and water boils away and rice is cooked al dente.
+                      Reduce heat to very low, cover pan with lid and let it steam for 20 minutes.
+                      To serve, place rice on the bottom of the plate, followed by sliced carrots and chunks of meat.
+                      Makes 5-6 portions.</p>
                   </div>
                 </div>
-               
+
+
+              <!---Wine card-->
                 <div  class="col-sm-6 mb-4">
-                      <div class="card">
-                        <img calss="card-img-top" style="height: 400px;" src="https://m.media-amazon.com/images/I/712k8lezsQL._AC_SY500_.jpg" alt="wine picture" >
+
+                      <div class="card" style="height: 100%; border: solid 9px whitesmoke;">
+                        <img class="card-img-top" style="height: 230px;" src="https://www.suhl-shop.de/media/catalog/product/cache/1/image/1800x/6b6381004f8ead6b6959b746082e54e0/k/i/kindzmarsuli_004.jpg" alt="wine picture" >
+
+
                         <div class="card-body">
-                        <h3 class="card-title">OUR WINE PAIRING SUGGESTIONS</h3> 
-                        <p class="card-text"> bla bla bla tasty wine</p>
+                        <h5 class="card-title">Our Wine pairing suggestions</h5> 
+                        <p class="card-text"> “A hands-on tasting experience in a winery’s Barrel Room is the perfect way to get up-close and personal with the winemaker.  Tasting wine from a barrel also gives you some understanding, and appreciation, for the transformation it will go through before making it to the bottle!” ~ Bruce and Pam Boring, Founders, The California Wine Club
+                        <br>
+
                         <br>
                         <br>
                         <br>
-                        <br><p>more bla bla bla tasty wine</p>
-                        <br> 
-                      
-                        <br>        
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br><p>more bla bla bla tasty wine</p>        
                         <a href="https://www.amazon.de/-/en/dp/B0867WY225/ref=sr_1_7?crid=OWBYDWIWUT8R&keywords=kindsmarauli+rotwein&qid=1648593595&sprefix=kingsmaraul%2Caps%2C92&sr=8-7" about: _blank class="btn btn-primary btn-block" target="_blank">Order the Wine Now</a>                 
                       </div>
                     </div>
@@ -128,30 +152,37 @@
                 <!-- Cards Sven -->
             <div class="row">
               <div class="col-sm-4">
-                <div class="card" style="width: 18rem; margin: 0 auto">
-                  <img src="./Pictures/samarkand_plov.jpeg" class="card-img-top" alt="...">
+
+                <div class="card" style="width: 18rem; margin: 0 auto; border: solid 8px whitesmoke;">
+                  <img src="./Pictures/asparagus-starter.jpg" class="card-img-top" alt="...">
+
                   <div class="card-body">
-                    <h5 class="card-title">Uzbek Plov</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="index.html" class="btn btn-primary btn-block">Uzbek Plov</a>
+                    <h6 class="card-title">Zesty Asparagus</h6>
+                    <p class="card-text">Sweet spring asparagus needs only lemon, butter and parmesan in this classic and classy recipe.</p>
+                    <a href="zestyasparagus.html" class="btn btn-success btn-block">Asparagus Starter</a>
                   </div>
                 </div>
               </div>
               <div class="col-sm-4">
-                <div class="card" style="width: 18rem; margin: 0 auto">
+
+                <div class="card" style="width: 18rem; margin: 0 auto; border: solid 8px whitesmoke;">
                   <img src="./Pictures/Cauliflower Rice Burrito Bowl.jpeg" class="card-img-top" alt="burrito bowl">
+
                   <div class="card-body">
-                    <h5 class="card-title">Cauliflower Rice Bowl</h5>
+                    <h6 class="card-title">Cauliflower Rice Bowl</h6>
                     <p class="card-text">If you love burrito bowls then this homemade burrito bowl is going to be a total game changer!</p>
-                    <a href="#" class="btn btn-primary btn-block">Burrito Bowl</a>
+                    <a href="bowl.html" class="btn btn-primary btn-block">Burrito Bowl</a>
                   </div>
                 </div>
               </div>
               <div class="col-sm-4">
-                <div class="card" style="width: 18rem; margin: 0 auto">
+
+
+                <div class="card" style="width: 18rem; margin: 0 auto; border: solid 8px whitesmoke;">
                   <img src="./Pictures/lemon.png" class="card-img-top" alt="lemon cake">
+
                   <div class="card-body">
-                    <h5 class="card-title">Lemon Drizzle Cake</h5>
+                    <h6 class="card-title">Lemon Drizzle Cake</h6>
                     <p class="card-text">This wonderfully simple lemon drizzle cake recipe is super-quick to prepare.</p>
                     <a href="lemondrizzle.html" class="btn btn-warning btn-block">Lemon Drizzle Cake</a>
                   </div>
@@ -160,85 +191,93 @@
             </div>
           </div> 
           </div>
+
         </div>
       </div>
     </div>
+  </div>
+</div> 
     </main>
 
 
 <!-- Footer Lilian -->
 
-<footer class="text-center text-white" style="background-color: rgba(0, 0, 0, 0.1); margin-top: 20px;">
-    <!-- Grid container -->
-    <div class="container pt-4" >
+<footer class="text-center text-white" style="background-color: rgba(255, 255, 255, 0.9); margin-top: 20px;">
+  <!-- Grid container -->
+  <div class="container pt-4" >
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <p class="text-center text-dark">Share this recipe on:</p>
+      <!-- Facebook -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href=""
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><img src="facebook.svg" alt="Facebook logo"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href=""
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><img src="twitter.svg" alt="Facebook logo"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href=""
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><img src="google.svg" alt="Facebook logo"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href=""
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><img src="instagram.svg" alt="Facebook logo"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href=""
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><img src="linkedin.svg" alt="Facebook logo"></i
+      ></a>
+
+      <!-- Github -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://github.com/forgerlil/cookbook"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><img src="github.svg" alt="Facebook logo"></a>
+    </section>
       <!-- Section: Social media -->
-      <section class="mb-4">
-        <p class="text-center text-dark">Share this recipe on:</p>
-        <!-- Facebook -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href=""
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><img src="facebook.svg" alt="Facebook logo"></i
-        ></a>
-  
-        <!-- Twitter -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href=""
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><img src="twitter.svg" alt="Facebook logo"></i
-        ></a>
-  
-        <!-- Google -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href=""
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><img src="google.svg" alt="Facebook logo"></i
-        ></a>
-  
-        <!-- Instagram -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href=""
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><img src="instagram.svg" alt="Facebook logo"></i
-        ></a>
-  
-        <!-- Linkedin -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href=""
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><img src="linkedin.svg" alt="Facebook logo"></i
-        ></a>
-  
-        <!-- Github -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="https://github.com/forgerlil/cookbook"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><img src="github.svg" alt="Facebook logo"></a>
-      </section>
-        <!-- Section: Social media -->
-      </div>
-        <!-- Grid container -->
-  
-        <!-- Copyright -->
-      <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2022 Copyright:
-        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-      </div>
-    </footer>
-  <script src="main.js"></script>
-  </body>
-  
-  
-  </html>
+    </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(255, 255, 255, 0.95);">
+        © 2022 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
+<script src="main.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
