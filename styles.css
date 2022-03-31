@@ -2,6 +2,12 @@
    
 }
 
+.jumbotron {
+background-image: url("./Pictures/jumbotron-resize.png");
+background-size: cover;
+align-items: bottom;
+}
+
 body {
   
     margin: 0px;
@@ -15,10 +21,13 @@ body {
   h1 {
     margin-top: 0px;
     margin-left: 0px;
+
     /*text-transform: lowercase;*/
     font-weight: bold;
     font-size: 80px;
     color: #5e5945;
+
+
   }
   
   h2 {
