@@ -164,3 +164,9 @@ footer a:hover {
     font-size: 1.5em;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .recipe-card {
+    width: 250px;
+  }
+}
