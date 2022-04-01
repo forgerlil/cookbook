@@ -49,7 +49,6 @@ body {
   }
   
   p,
-  ol,
   ul {
     text-align: justify;
     line-height: 160%;
@@ -69,6 +68,11 @@ body {
 
 footer a {
   border-radius: 50%;
+}
+
+ol {
+     margin-block-start: 0 !important;
+     padding-inline-start: 4%;
 }
 
 footer a:hover {
